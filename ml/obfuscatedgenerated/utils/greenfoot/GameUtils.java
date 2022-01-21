@@ -40,6 +40,11 @@ public class GameUtils extends Actor {
         }
     }
 
+    public static void init() {
+        initTime = System.currentTimeMillis();
+        deltaTime = 0;
+    }
+
     public static void update() {
         double nowTime = System.currentTimeMillis();
         deltaTime = (nowTime - initTime) / 1000;
