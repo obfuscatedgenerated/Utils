@@ -50,3 +50,15 @@ public class GameUtils extends Actor {
         return deltaTime;
     }
 }
+
+// EXAMPLE CODE FOR DELTA MOVEMENT:
+//
+// import greenfoot.*;
+// import ml.obfuscatedgenerated.utils.greenfoot.GameUtils;
+//
+// public class SmoothMover extends Actor {
+//     public void act() {
+//         GameUtils.update();
+//         GameUtils.setExactLocation(this,GameUtils.getExactX(this)+(100*GameUtils.getDelta()),50.0);
+//     }
+// }
