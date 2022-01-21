@@ -58,6 +58,8 @@ public class GameUtils extends Actor {
 
 // EXAMPLE CODE FOR DELTA MOVEMENT:
 //
+// (IN THE ACTOR CODE)
+//
 // import greenfoot.*;
 // import ml.obfuscatedgenerated.utils.greenfoot.GameUtils;
 //
@@ -65,5 +67,21 @@ public class GameUtils extends Actor {
 //     public void act() {
 //         GameUtils.update();
 //         GameUtils.setExactLocation(this,GameUtils.getExactX(this)+(100*GameUtils.getDelta()),50.0);
+//     }
+// }
+//
+//
+// (IN THE WORLD CODE)
+//
+// import greenfoot.*;
+// import ml.obfuscatedgenerated.utils.greenfoot.GameUtils;
+// 
+// public class MyWorld extends World {
+// 
+//     public MyWorld() {    
+//         super(600, 400, 1);
+//     }
+//     public void started() {
+//         GameUtils.init();
 //     }
 // }
