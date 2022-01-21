@@ -41,9 +41,9 @@ public class GameUtils extends Actor {
     }
 
     public static void update() {
-	    double nowTime = System.currentTimeMillis();
+        double nowTime = System.currentTimeMillis();
         deltaTime = (nowTime - initTime) / 1000;
-	    initTime = nowTime;
+        initTime = nowTime;
     }
 
     public static double getDelta() {
