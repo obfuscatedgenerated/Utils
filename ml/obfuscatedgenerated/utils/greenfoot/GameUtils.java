@@ -54,6 +54,15 @@ public class GameUtils extends Actor {
     public static double getDelta() {
         return deltaTime;
     }
+
+    public static float invSqrt(float x) { // the FISR, as in Quake III Arena
+        float xhalf = 0.5f * x;
+        int i = Float.floatToIntBits(x);
+        i = 0x5f3759df - (i >> 1);
+        x = Float.intBitsToFloat(i);
+        x *= (1.5f - xhalf * x * x);
+        return x;
+    }
 }
 
 // EXAMPLE CODE FOR DELTA MOVEMENT:
